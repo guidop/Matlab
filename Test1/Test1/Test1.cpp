@@ -29,7 +29,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 
 
-	std::wstring path = L"C:\\Users\\guido\\Documents\\MATLAB\\";
+	std::wstring path = L"..\\..\\ModelTest\\";
 	std::wstring dllName = L"ToBeCompiled_win32.dll";
 	std::wstring fullPath = path + dllName;
 
