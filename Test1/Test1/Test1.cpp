@@ -54,7 +54,12 @@ int _tmain(int argc, _TCHAR* argv[])
 	terminateModel = (TerminateModel)GetProcAddress(handle, methodName.c_str());
 	ManageError(terminateModel, methodName);
 	
+	methodName = "_Ampiezza";
+	double *ampiezzza;
+	ampiezzza = (double*)GetProcAddress(handle, methodName.c_str());
+	ManageError(ampiezzza, methodName);
 
+	*ampiezzza = 1;
 	initModel(true);
 	for (int i = 0; i < 100; i++)
 		stepModel();
